@@ -15,6 +15,8 @@
 		BC1AAD9E1C9A059300454F6B /* MusicVideoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC1AAD9D1C9A059300454F6B /* MusicVideoTests.swift */; };
 		BC1AADA91C9A059300454F6B /* MusicVideoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC1AADA81C9A059300454F6B /* MusicVideoUITests.swift */; };
 		BC5061321C9B03FB00AD599C /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC5061311C9B03FB00AD599C /* APIManager.swift */; };
+		BCAD8B5E1CA055E30043FC3A /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCAD8B5D1CA055E30043FC3A /* Constants.swift */; };
+		BCAD8B601CA057520043FC3A /* MusicVideo.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCAD8B5F1CA057520043FC3A /* MusicVideo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		BC1AADA81C9A059300454F6B /* MusicVideoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicVideoUITests.swift; sourceTree = "<group>"; };
 		BC1AADAA1C9A059300454F6B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BC5061311C9B03FB00AD599C /* APIManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		BCAD8B5D1CA055E30043FC3A /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		BCAD8B5F1CA057520043FC3A /* MusicVideo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MusicVideo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +103,7 @@
 		BC1AAD871C9A059300454F6B /* MusicVideo */ = {
 			isa = PBXGroup;
 			children = (
+				BCAD8B5C1CA055BB0043FC3A /* Utils */,
 				BC1AADBA1C9A08FE00454F6B /* Supporting Files */,
 				BC1AADB61C9A087F00454F6B /* Model */,
 				BC1AADB81C9A08CA00454F6B /* Controller */,
@@ -128,6 +133,7 @@
 		BC1AADB61C9A087F00454F6B /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				BCAD8B5F1CA057520043FC3A /* MusicVideo.swift */,
 				BC5061311C9B03FB00AD599C /* APIManager.swift */,
 			);
 			name = Model;
@@ -158,6 +164,14 @@
 				BC1AAD881C9A059300454F6B /* AppDelegate.swift */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BCAD8B5C1CA055BB0043FC3A /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				BCAD8B5D1CA055E30043FC3A /* Constants.swift */,
+			);
+			name = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -293,7 +307,9 @@
 			files = (
 				BC5061321C9B03FB00AD599C /* APIManager.swift in Sources */,
 				BC1AAD8B1C9A059300454F6B /* ViewController.swift in Sources */,
+				BCAD8B601CA057520043FC3A /* MusicVideo.swift in Sources */,
 				BC1AAD891C9A059300454F6B /* AppDelegate.swift in Sources */,
+				BCAD8B5E1CA055E30043FC3A /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
