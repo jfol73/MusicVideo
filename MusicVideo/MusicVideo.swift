@@ -24,7 +24,7 @@ class Videos {
     private var _vReleaseDte:String
     
     //This variable gets created from the UI
-    var vImageDate:NSData?
+    var vImageData:NSData?
     
     //Make a getter
     
