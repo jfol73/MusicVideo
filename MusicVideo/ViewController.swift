@@ -17,13 +17,14 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        
         NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(ViewController.reachabilityStatusChanged), name: "ReachStatusChanged", object: nil)
         
         reachabilityStatusChanged()
         
         //Call API
         let api = APIManager()
-        api.loadData("https://itunes.apple.com/us/rss/topmusicvideos/limit=10/json", completion: didLoadData)
+        api.loadData("https://itunes.apple.com/us/rss/topmusicvideos/limit=50/json", completion: didLoadData)
     }
 
     func didLoadData(videos: [Videos]) {
@@ -40,6 +41,7 @@ class ViewController: UIViewController {
         for (index, item) in videos.enumerate() {
             print("\(index+1) name = \(item.vName)")
         }
+        
     }
     
     func reachabilityStatusChanged() {
