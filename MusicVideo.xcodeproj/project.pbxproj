@@ -15,6 +15,7 @@
 		BC1AAD9E1C9A059300454F6B /* MusicVideoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC1AAD9D1C9A059300454F6B /* MusicVideoTests.swift */; };
 		BC1AADA91C9A059300454F6B /* MusicVideoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC1AADA81C9A059300454F6B /* MusicVideoUITests.swift */; };
 		BC5061321C9B03FB00AD599C /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC5061311C9B03FB00AD599C /* APIManager.swift */; };
+		BC53122D1CAC83EB00D6FFAB /* MusicVideoDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC53122C1CAC83EB00D6FFAB /* MusicVideoDetailVC.swift */; };
 		BC548C541CAB05220059774D /* MusicVideoTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC548C531CAB05220059774D /* MusicVideoTVC.swift */; };
 		BC548C561CAB144E0059774D /* MusicVideoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC548C551CAB144E0059774D /* MusicVideoTableViewCell.swift */; };
 		BC70706F1CA2F19E0056A5D1 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = BC70706E1CA2F19E0056A5D1 /* Reachability.m */; };
@@ -54,6 +55,7 @@
 		BC1AADA81C9A059300454F6B /* MusicVideoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicVideoUITests.swift; sourceTree = "<group>"; };
 		BC1AADAA1C9A059300454F6B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BC5061311C9B03FB00AD599C /* APIManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		BC53122C1CAC83EB00D6FFAB /* MusicVideoDetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MusicVideoDetailVC.swift; sourceTree = "<group>"; };
 		BC548C531CAB05220059774D /* MusicVideoTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MusicVideoTVC.swift; sourceTree = "<group>"; };
 		BC548C551CAB144E0059774D /* MusicVideoTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MusicVideoTableViewCell.swift; sourceTree = "<group>"; };
 		BC70706C1CA2F19D0056A5D1 /* MusicVideo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MusicVideo-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -151,6 +153,7 @@
 		BC1AADB81C9A08CA00454F6B /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				BC53122C1CAC83EB00D6FFAB /* MusicVideoDetailVC.swift */,
 				BC548C531CAB05220059774D /* MusicVideoTVC.swift */,
 				BC548C551CAB144E0059774D /* MusicVideoTableViewCell.swift */,
 				BC1AAD8A1C9A059300454F6B /* ViewController.swift */,
@@ -327,6 +330,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BC5061321C9B03FB00AD599C /* APIManager.swift in Sources */,
+				BC53122D1CAC83EB00D6FFAB /* MusicVideoDetailVC.swift in Sources */,
 				BC1AAD8B1C9A059300454F6B /* ViewController.swift in Sources */,
 				BCAD8B601CA057520043FC3A /* MusicVideo.swift in Sources */,
 				BC548C561CAB144E0059774D /* MusicVideoTableViewCell.swift in Sources */,

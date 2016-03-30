@@ -85,7 +85,8 @@ class MusicVideoTVC: UITableViewController {
     // Is called just as the object is about to be deallocated
     deinit {
         NSNotificationCenter.defaultCenter().removeObserver(self, name: "ReachStatusChanged", object: nil)
-        NSNotificationCenter.defaultCenter().removeObserver(UIContentSizeCategoryDidChangeNotification)
+        NSNotificationCenter.defaultCenter().removeObserver(self, name: UIContentSizeCategoryDidChangeNotification, object: nil)
+        
         
     }
 
