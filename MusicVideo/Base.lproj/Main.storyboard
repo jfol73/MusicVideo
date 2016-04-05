@@ -88,10 +88,10 @@
             </objects>
             <point key="canvasLocation" x="1218" y="241"/>
         </scene>
-        <!--Table View Controller-->
+        <!--SettingTVC-->
         <scene sceneID="Na1-TH-wUb">
             <objects>
-                <tableViewController id="Cui-sR-R72" sceneMemberID="viewController">
+                <tableViewController id="Cui-sR-R72" customClass="SettingTVC" customModule="MusicVideo" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="uJI-1D-IjN">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -103,7 +103,7 @@
                                         <rect key="frame" x="0.0" y="64" width="600" height="84"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="3Ef-1x-awP" id="Zt7-OC-cQ4">
-                                            <rect key="frame" x="0.0" y="0.0" width="600" height="84"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="83.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="About" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Utc-tW-VJ2">
@@ -127,7 +127,7 @@
                                         <rect key="frame" x="0.0" y="148" width="600" height="84"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="hcw-RT-Uga" id="LKb-O7-470">
-                                            <rect key="frame" x="0.0" y="0.0" width="600" height="84"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="83.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Feedback" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eOn-wQ-CDe">
@@ -253,6 +253,15 @@
                             <outlet property="delegate" destination="Cui-sR-R72" id="PWn-Tm-4mv"/>
                         </connections>
                     </tableView>
+                    <connections>
+                        <outlet property="APICnt" destination="oqf-01-rCc" id="U2U-Vt-F4b"/>
+                        <outlet property="aboutDisplay" destination="Utc-tW-VJ2" id="Hk1-wd-FAo"/>
+                        <outlet property="bestImageDisplay" destination="h0b-2h-IeE" id="qhK-Zd-w0M"/>
+                        <outlet property="feedBackDisplay" destination="eOn-wQ-CDe" id="04N-WN-UPG"/>
+                        <outlet property="securityDisplay" destination="2Gl-8v-NJl" id="gna-1q-o3J"/>
+                        <outlet property="sliderCnt" destination="TJJ-Mr-rVp" id="GcR-Wq-8sY"/>
+                        <outlet property="touchId" destination="mhC-ah-rdY" id="PZL-J4-y6a"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1Ja-pJ-oNQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
