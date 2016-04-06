@@ -24,6 +24,11 @@ class SettingTVC: UITableViewController {
     
     @IBOutlet weak var bestImageDisplay: UILabel!
     
+    @IBOutlet weak var numberOfVideosDisplay: UILabel!
+    
+    
+    @IBOutlet weak var dragTheSliderDisplay: UILabel!
+    
     
     @IBOutlet weak var APICnt: UILabel!
     
@@ -84,6 +89,10 @@ class SettingTVC: UITableViewController {
         securityDisplay.font = UIFont.preferredFontForTextStyle(UIFontTextStyleSubheadline)
         bestImageDisplay.font = UIFont.preferredFontForTextStyle(UIFontTextStyleSubheadline)
         APICnt.font = UIFont.preferredFontForTextStyle(UIFontTextStyleSubheadline)
+        
+        numberOfVideosDisplay.font = UIFont.preferredFontForTextStyle(UIFontTextStyleSubheadline)
+        dragTheSliderDisplay.font = UIFont.preferredFontForTextStyle(UIFontTextStyleFootnote)
+        
         
     }
     

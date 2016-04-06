@@ -221,7 +221,7 @@
                                         <rect key="frame" x="0.0" y="400" width="600" height="84"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="4XS-FO-RRB" id="bvn-Qb-5X9">
-                                            <rect key="frame" x="0.0" y="0.0" width="600" height="84"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="83.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oqf-01-rCc">
@@ -249,7 +249,7 @@
                                         <rect key="frame" x="0.0" y="484" width="600" height="84"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Q6g-zV-912" id="Sk7-ku-DrV">
-                                            <rect key="frame" x="0.0" y="0.0" width="600" height="84"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="83.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="10" minValue="10" maxValue="200" translatesAutoresizingMaskIntoConstraints="NO" id="TJJ-Mr-rVp">
@@ -290,7 +290,9 @@
                         <outlet property="APICnt" destination="oqf-01-rCc" id="U2U-Vt-F4b"/>
                         <outlet property="aboutDisplay" destination="Utc-tW-VJ2" id="Hk1-wd-FAo"/>
                         <outlet property="bestImageDisplay" destination="h0b-2h-IeE" id="qhK-Zd-w0M"/>
+                        <outlet property="dragTheSliderDisplay" destination="Nfy-I7-oM9" id="jCo-VK-YZf"/>
                         <outlet property="feedBackDisplay" destination="eOn-wQ-CDe" id="04N-WN-UPG"/>
+                        <outlet property="numberOfVideosDisplay" destination="XtY-vb-xO2" id="fYH-Kl-0se"/>
                         <outlet property="securityDisplay" destination="2Gl-8v-NJl" id="gna-1q-o3J"/>
                         <outlet property="sliderCnt" destination="TJJ-Mr-rVp" id="GcR-Wq-8sY"/>
                         <outlet property="touchId" destination="mhC-ah-rdY" id="PZL-J4-y6a"/>
@@ -312,21 +314,28 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="9VI-k3-s0V">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="9VI-k3-s0V">
                                 <rect key="frame" x="20" y="64" width="560" height="236"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <string key="text">Jaime Orrego
 Officefront SAC
 Manuel Olguín 335, Int. 1001
 Santiago de Surco
-info@officefront.pe, telf. 6409601
+info@officefront.pe
+telf. 6409601
 Lima, Perú
 Abril 2016</string>
-                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="9VI-k3-s0V" firstAttribute="top" secondItem="CYb-fi-dEd" secondAttribute="bottom" id="VOJ-Db-zzd"/>
+                            <constraint firstItem="vWA-8N-HFR" firstAttribute="top" secondItem="9VI-k3-s0V" secondAttribute="bottom" constant="256" id="dMd-z2-Pkn"/>
+                            <constraint firstItem="9VI-k3-s0V" firstAttribute="trailing" secondItem="l7V-fA-GkU" secondAttribute="trailingMargin" id="lmr-dh-eoO"/>
+                            <constraint firstItem="9VI-k3-s0V" firstAttribute="leading" secondItem="l7V-fA-GkU" secondAttribute="leadingMargin" id="wHb-vQ-zIy"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="YQy-Ki-1m4"/>
                 </viewController>
@@ -457,6 +466,9 @@ Abril 2016</string>
                         <barButtonItem style="plain" systemItem="flexibleSpace" id="bHM-aX-GFY"/>
                         <barButtonItem systemItem="action" id="yXD-81-PKv">
                             <color key="tintColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <action selector="socialMedia:" destination="aV5-gd-Eih" id="bRb-Dz-Kxm"/>
+                            </connections>
                         </barButtonItem>
                     </toolbarItems>
                     <connections>
