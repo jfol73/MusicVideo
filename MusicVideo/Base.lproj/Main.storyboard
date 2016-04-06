@@ -83,6 +83,12 @@
                         </barButtonItem>
                     </toolbarItems>
                     <navigationItem key="navigationItem" id="Bat-9A-wd4"/>
+                    <refreshControl key="refreshControl" opaque="NO" multipleTouchEnabled="YES" contentMode="center" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" id="1ld-fU-kWU">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <connections>
+                            <action selector="refresh:" destination="UMv-YJ-3M8" eventType="valueChanged" id="sP0-Tq-XLm"/>
+                        </connections>
+                    </refreshControl>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yMy-qt-XBs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -215,21 +221,27 @@
                                         <rect key="frame" x="0.0" y="400" width="600" height="84"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="4XS-FO-RRB" id="bvn-Qb-5X9">
-                                            <rect key="frame" x="0.0" y="0.0" width="600" height="83.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="84"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oqf-01-rCc">
-                                                    <rect key="frame" x="8" y="8" width="584" height="75"/>
+                                                    <rect key="frame" x="560" y="26" width="16" height="17"/>
+                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Number of Music Videos" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XtY-vb-xO2">
+                                                    <rect key="frame" x="8" y="31" width="159" height="17"/>
                                                     <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="oqf-01-rCc" firstAttribute="top" secondItem="bvn-Qb-5X9" secondAttribute="topMargin" id="OL4-JM-y0x"/>
-                                                <constraint firstItem="oqf-01-rCc" firstAttribute="trailing" secondItem="bvn-Qb-5X9" secondAttribute="trailingMargin" id="aNJ-YI-eYp"/>
-                                                <constraint firstItem="oqf-01-rCc" firstAttribute="leading" secondItem="bvn-Qb-5X9" secondAttribute="leadingMargin" id="b2s-9g-Yqk"/>
-                                                <constraint firstAttribute="bottomMargin" secondItem="oqf-01-rCc" secondAttribute="bottom" constant="-7.5" id="k7a-tc-H6e"/>
+                                                <constraint firstItem="oqf-01-rCc" firstAttribute="top" secondItem="bvn-Qb-5X9" secondAttribute="topMargin" constant="18" id="Id8-0f-7lG"/>
+                                                <constraint firstItem="XtY-vb-xO2" firstAttribute="leading" secondItem="bvn-Qb-5X9" secondAttribute="leadingMargin" id="K1E-Rx-jg4"/>
+                                                <constraint firstItem="XtY-vb-xO2" firstAttribute="top" secondItem="bvn-Qb-5X9" secondAttribute="topMargin" constant="23" id="cGU-Qf-9c9"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="oqf-01-rCc" secondAttribute="trailing" constant="16" id="sHo-wR-7xd"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -237,20 +249,32 @@
                                         <rect key="frame" x="0.0" y="484" width="600" height="84"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Q6g-zV-912" id="Sk7-ku-DrV">
-                                            <rect key="frame" x="0.0" y="0.0" width="600" height="83.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="84"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="10" minValue="10" maxValue="200" translatesAutoresizingMaskIntoConstraints="NO" id="TJJ-Mr-rVp">
-                                                    <rect key="frame" x="46" y="27" width="509" height="31"/>
+                                                    <rect key="frame" x="46" y="37" width="509" height="31"/>
                                                     <connections>
                                                         <action selector="valueChanged:" destination="Cui-sR-R72" eventType="valueChanged" id="4a3-dC-Ql8"/>
                                                     </connections>
                                                 </slider>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Drag the slider below" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nfy-I7-oM9">
+                                                    <rect key="frame" x="169" y="8" width="263" height="21"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="263" id="G1g-d9-Itp"/>
+                                                        <constraint firstAttribute="height" constant="21" id="VHI-lM-vym"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleFootnote"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="TJJ-Mr-rVp" firstAttribute="centerY" secondItem="Sk7-ku-DrV" secondAttribute="centerY" id="2Dh-FZ-D3G"/>
-                                                <constraint firstItem="TJJ-Mr-rVp" firstAttribute="leading" secondItem="Sk7-ku-DrV" secondAttribute="leadingMargin" constant="40" id="8v3-lG-ZAR"/>
-                                                <constraint firstItem="TJJ-Mr-rVp" firstAttribute="centerX" secondItem="Sk7-ku-DrV" secondAttribute="centerX" id="oHy-Bj-gTX"/>
+                                                <constraint firstItem="Nfy-I7-oM9" firstAttribute="centerX" secondItem="TJJ-Mr-rVp" secondAttribute="centerX" id="Fz0-zO-UmQ"/>
+                                                <constraint firstItem="Nfy-I7-oM9" firstAttribute="centerX" secondItem="Sk7-ku-DrV" secondAttribute="centerX" id="IfB-IS-RLS"/>
+                                                <constraint firstItem="Nfy-I7-oM9" firstAttribute="top" secondItem="Sk7-ku-DrV" secondAttribute="topMargin" id="YD3-Sn-uyE"/>
+                                                <constraint firstItem="TJJ-Mr-rVp" firstAttribute="top" secondItem="Nfy-I7-oM9" secondAttribute="bottom" constant="8" symbolic="YES" id="jPD-Cc-OZ1"/>
+                                                <constraint firstItem="TJJ-Mr-rVp" firstAttribute="leading" secondItem="Sk7-ku-DrV" secondAttribute="leadingMargin" constant="40" id="vCa-tp-3QQ"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
