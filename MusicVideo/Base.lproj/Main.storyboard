@@ -129,7 +129,7 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="w95-w2-7Er" kind="push" id="iMS-BC-i6C"/>
+                                            <segue destination="w95-w2-7Er" kind="show" id="iMS-BC-i6C"/>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="84" id="hcw-RT-Uga">
@@ -315,7 +315,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="9VI-k3-s0V">
-                                <rect key="frame" x="20" y="64" width="560" height="236"/>
+                                <rect key="frame" x="20" y="64" width="560" height="473"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <string key="text">Jaime Orrego
 Officefront SAC
@@ -331,10 +331,10 @@ Abril 2016</string>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="9VI-k3-s0V" firstAttribute="top" secondItem="CYb-fi-dEd" secondAttribute="bottom" id="VOJ-Db-zzd"/>
-                            <constraint firstItem="vWA-8N-HFR" firstAttribute="top" secondItem="9VI-k3-s0V" secondAttribute="bottom" constant="256" id="dMd-z2-Pkn"/>
-                            <constraint firstItem="9VI-k3-s0V" firstAttribute="trailing" secondItem="l7V-fA-GkU" secondAttribute="trailingMargin" id="lmr-dh-eoO"/>
-                            <constraint firstItem="9VI-k3-s0V" firstAttribute="leading" secondItem="l7V-fA-GkU" secondAttribute="leadingMargin" id="wHb-vQ-zIy"/>
+                            <constraint firstItem="9VI-k3-s0V" firstAttribute="centerY" secondItem="l7V-fA-GkU" secondAttribute="centerY" id="6L3-U3-Gyd"/>
+                            <constraint firstItem="9VI-k3-s0V" firstAttribute="leading" secondItem="l7V-fA-GkU" secondAttribute="leadingMargin" id="X2M-Nn-lYf"/>
+                            <constraint firstItem="9VI-k3-s0V" firstAttribute="top" secondItem="CYb-fi-dEd" secondAttribute="bottom" id="mZp-Yn-fSW"/>
+                            <constraint firstItem="9VI-k3-s0V" firstAttribute="trailing" secondItem="l7V-fA-GkU" secondAttribute="trailingMargin" id="xuY-Mi-PTm"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="YQy-Ki-1m4"/>
