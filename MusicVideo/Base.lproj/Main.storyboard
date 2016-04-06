@@ -426,6 +426,9 @@ Abril 2016</string>
                     <toolbarItems>
                         <barButtonItem systemItem="play" id="YHe-F3-kUf">
                             <color key="tintColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <action selector="playVideo:" destination="aV5-gd-Eih" id="F4n-s1-M5f"/>
+                            </connections>
                         </barButtonItem>
                         <barButtonItem style="plain" systemItem="flexibleSpace" id="bHM-aX-GFY"/>
                         <barButtonItem systemItem="action" id="yXD-81-PKv">
