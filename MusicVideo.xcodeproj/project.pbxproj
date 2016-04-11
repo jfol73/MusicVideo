@@ -22,6 +22,7 @@
 		BC70706F1CA2F19E0056A5D1 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = BC70706E1CA2F19E0056A5D1 /* Reachability.m */; };
 		BCAD8B5E1CA055E30043FC3A /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCAD8B5D1CA055E30043FC3A /* Constants.swift */; };
 		BCAD8B601CA057520043FC3A /* MusicVideo.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCAD8B5F1CA057520043FC3A /* MusicVideo.swift */; };
+		BCE22D2B1CB811A60085645B /* MyExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCE22D2A1CB811A60085645B /* MyExtensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +66,7 @@
 		BC70706E1CA2F19E0056A5D1 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
 		BCAD8B5D1CA055E30043FC3A /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		BCAD8B5F1CA057520043FC3A /* MusicVideo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MusicVideo.swift; sourceTree = "<group>"; };
+		BCE22D2A1CB811A60085645B /* MyExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyExtensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,6 +157,7 @@
 		BC1AADB81C9A08CA00454F6B /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				BCE22D2A1CB811A60085645B /* MyExtensions.swift */,
 				BC11991E1CB318B500DEF01E /* SettingTVC.swift */,
 				BC53122C1CAC83EB00D6FFAB /* MusicVideoDetailVC.swift */,
 				BC548C531CAB05220059774D /* MusicVideoTVC.swift */,
@@ -338,6 +341,7 @@
 				BCAD8B601CA057520043FC3A /* MusicVideo.swift in Sources */,
 				BC548C561CAB144E0059774D /* MusicVideoTableViewCell.swift in Sources */,
 				BC1AAD891C9A059300454F6B /* AppDelegate.swift in Sources */,
+				BCE22D2B1CB811A60085645B /* MyExtensions.swift in Sources */,
 				BC11991F1CB318B500DEF01E /* SettingTVC.swift in Sources */,
 				BC70706F1CA2F19E0056A5D1 /* Reachability.m in Sources */,
 				BCAD8B5E1CA055E30043FC3A /* Constants.swift in Sources */,

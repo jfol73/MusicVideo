@@ -8,7 +8,7 @@
 
 import UIKit
 
-class MusicVideoTVC: UITableViewController, UISearchResultsUpdating {
+class MusicVideoTVC: UITableViewController {
 
     var videos = [Videos]()
     
@@ -63,7 +63,7 @@ class MusicVideoTVC: UITableViewController, UISearchResultsUpdating {
         definesPresentationContext = true
         
         resultSearchController.dimsBackgroundDuringPresentation = false
-        resultSearchController.searchBar.placeholder = "Search for the Artist"
+        resultSearchController.searchBar.placeholder = "Search for the Artist, Name, Rank"
         resultSearchController.searchBar.searchBarStyle = UISearchBarStyle.Prominent
         
         // add the search bar to your tableview
@@ -245,17 +245,24 @@ class MusicVideoTVC: UITableViewController, UISearchResultsUpdating {
         }
     }
 
-    func updateSearchResultsForSearchController(searchController: UISearchController) {
-        searchController.searchBar.text!.lowercaseString
-        filterSearch(searchController.searchBar.text!)
-    }
+//    func updateSearchResultsForSearchController(searchController: UISearchController) {
+//        searchController.searchBar.text!.lowercaseString
+//        filterSearch(searchController.searchBar.text!)
+//    }
     
     func filterSearch(searchText: String) {
         filterSearch = videos.filter { videos in
-            return videos.vArtist.lowercaseString.containsString(searchText.lowercaseString)
+            return videos.vArtist.lowercaseString.containsString(searchText.lowercaseString) || "\(videos.vRank)".lowercaseString.containsString(searchText.lowercaseString) || videos.vName.lowercaseString.containsString(searchText.lowercaseString)
         }
         
         tableView.reloadData()
     }
 
 }
+
+//extension MusicVideoTVC: UISearchResultsUpdating {
+//    func updateSearchResultsForSearchController(searchController: UISearchController) {
+//        searchController.searchBar.text!.lowercaseString
+//        filterSearch(searchController.searchBar.text!)
+//    }
+//}
