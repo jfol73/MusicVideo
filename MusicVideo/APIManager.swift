@@ -10,7 +10,7 @@ import Foundation
 
 class APIManager {
     
-    func loadData(urlString:String, completion: [Videos] -> Void) {
+    func loadData(urlString:String, completion: [Video] -> Void) {
         
         let config = NSURLSessionConfiguration.ephemeralSessionConfiguration()
         
@@ -35,9 +35,9 @@ class APIManager {
                     
                     if let json = try NSJSONSerialization.JSONObjectWithData(data!, options: .AllowFragments) as? JSONDictionary, feed = json["feed"] as? JSONDictionary, entries = feed["entry"] as? JSONArray {
                         
-                        var videos = [Videos]()
+                        var videos = [Video]()
                         for (index, entry) in entries.enumerate() {
-                            let entry = Videos(data: entry as! JSONDictionary)
+                            let entry = Video(data: entry as! JSONDictionary)
                             entry.vRank = index + 1
                             videos.append(entry)
                         }

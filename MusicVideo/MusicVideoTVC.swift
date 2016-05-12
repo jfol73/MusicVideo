@@ -10,9 +10,9 @@ import UIKit
 
 class MusicVideoTVC: UITableViewController {
 
-    var videos = [Videos]()
+    var videos = [Video]()
     
-    var filterSearch = [Videos]()
+    var filterSearch = [Video]()
     
     let resultSearchController = UISearchController(searchResultsController: nil)
     
@@ -23,9 +23,19 @@ class MusicVideoTVC: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(ViewController.reachabilityStatusChanged), name: "ReachStatusChanged", object: nil)
-        
-        NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(MusicVideoTVC.preferredFontChange), name: UIContentSizeCategoryDidChangeNotification, object: nil)
+        #if swift(>=2.2)
+            
+            NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(MusicVideoTVC.reachabilityStatusChanged), name: "ReachStatusChanged", object: nil)
+            
+            NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(MusicVideoTVC.preferredFontChange), name: UIContentSizeCategoryDidChangeNotification, object: nil)
+        #else
+            
+            NSNotificationCenter.defaultCenter().addObserver(self, selector: "reachabilityStatusChanged", name: "ReachStatusChanged", object: nil)
+            
+            NSNotificationCenter.defaultCenter().addObserver(self, selector: "preferredFontChange", name: UIContentSizeCategoryDidChangeNotification, object: nil)
+            
+            
+        #endif
         
         reachabilityStatusChanged()
         
@@ -37,7 +47,7 @@ class MusicVideoTVC: UITableViewController {
     }
     
     
-    func didLoadData(videos: [Videos]) {
+    func didLoadData(videos: [Video]) {
         
         print(reachabilityStatus)
         
@@ -230,7 +240,7 @@ class MusicVideoTVC: UITableViewController {
         if segue.identifier == storyboard.segueIdentifier {
             if let indexpath = tableView.indexPathForSelectedRow {
                 
-                let video: Videos
+                let video: Video
                 
                 if resultSearchController.active {
                     video = filterSearch[indexpath.row]
