@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BC0BDC9C1CE50953003208DB /* JsonDataExtractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC0BDC9B1CE50953003208DB /* JsonDataExtractor.swift */; };
 		BC11991F1CB318B500DEF01E /* SettingTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC11991E1CB318B500DEF01E /* SettingTVC.swift */; };
 		BC1AAD891C9A059300454F6B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC1AAD881C9A059300454F6B /* AppDelegate.swift */; };
 		BC1AAD8E1C9A059300454F6B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC1AAD8C1C9A059300454F6B /* Main.storyboard */; };
@@ -42,6 +43,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		BC0BDC9B1CE50953003208DB /* JsonDataExtractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JsonDataExtractor.swift; sourceTree = "<group>"; };
 		BC11991E1CB318B500DEF01E /* SettingTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingTVC.swift; sourceTree = "<group>"; };
 		BC1AAD851C9A059300454F6B /* MusicVideo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MusicVideo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC1AAD881C9A059300454F6B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -148,6 +150,7 @@
 			children = (
 				BCAD8B5F1CA057520043FC3A /* MusicVideo.swift */,
 				BC5061311C9B03FB00AD599C /* APIManager.swift */,
+				BC0BDC9B1CE50953003208DB /* JsonDataExtractor.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -336,6 +339,7 @@
 				BC53122D1CAC83EB00D6FFAB /* MusicVideoDetailVC.swift in Sources */,
 				BCAD8B601CA057520043FC3A /* MusicVideo.swift in Sources */,
 				BC548C561CAB144E0059774D /* MusicVideoTableViewCell.swift in Sources */,
+				BC0BDC9C1CE50953003208DB /* JsonDataExtractor.swift in Sources */,
 				BC1AAD891C9A059300454F6B /* AppDelegate.swift in Sources */,
 				BCE22D2B1CB811A60085645B /* MyExtensions.swift in Sources */,
 				BC11991F1CB318B500DEF01E /* SettingTVC.swift in Sources */,

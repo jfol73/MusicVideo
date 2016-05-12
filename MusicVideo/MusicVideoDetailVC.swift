@@ -95,7 +95,7 @@ class MusicVideoDetailVC: UIViewController {
                         alert.message = "Authentication was cancelled by application"
                         
                     case .AuthenticationFailed:
-                        alert.message = "The user failed to provide valide credentials"
+                        alert.message = "The user failed to provide valid credentials"
                         
                     case .PasscodeNotSet:
                         alert.message = "Passcode is not set on the device"
